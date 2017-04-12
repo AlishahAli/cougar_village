@@ -1,0 +1,337 @@
+html,body { 
+	height: 100%; margin: 0px; padding: 0px; 
+}
+body{
+	background-color:gray;
+}
+
+.container {
+    overflow: hidden;
+    background-color: #686868;
+    font-family: Arial;
+    border-radius: 4px;
+}
+
+.container a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 1.5px solid black;
+}
+
+#Logout{
+	color:white;
+}
+#home{
+	color:white;
+	clear:left;
+	float:left;
+
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    border-radius: 6px;
+    border:1.5px solid black;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFAFA;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(128,128,128,0.7);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#Parkname{
+	height: 80px;
+	background-color: blue;
+	width: 782px;
+	margin: 0 auto;
+	border-radius: 4px;
+	font-family: Verdana;
+	text-align: center;
+}
+
+
+#wrapper{
+	background-image : url("roller.jpg");
+	background-size: cover;
+	height: 90%;
+	
+	
+}
+#heading{
+	height: 10%;
+	background-color: gray;
+	text-align: center;
+	font-size: 1em;
+}
+
+
+
+#login{
+		display: block;
+		text-align: center;
+		font-family: Verdana;
+	}
+	#UN{
+		width: 45%;
+		padding: 6px 20px;
+		margin 8px 0;
+		box-sizing: border-box;
+		border-radius: 4px;
+		text-align:left;
+	}
+	#pwd{
+		
+		width: 45%;
+		padding: 6px 20px;
+		margin 8px 0;
+		box-sizing: border-box;	
+		border-radius: 4px;
+		text-align:left;
+	}
+	#sub{
+	background-color: #2a52be; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 8px 100px;
+    cursor: pointer;
+	border-radius: 10px;
+	font-family: Verdana;
+	font-size: .8em;
+	
+	}
+	
+	#signbutton{
+		color: white;
+		padding: 10px 15px;
+		text-align: center;
+		font-family: Verdana;
+		font-size: .8em;
+		background-color:#2a52be;
+	}
+	#UN:hover, #pwd:hover{
+		border-color: blue;
+	}
+	#sign{
+		display: block;
+		text-align: center;
+		font-family: Verdana;
+	}
+	#LF{
+		/*background-color: #222930;*/
+		background-image: url("test.jpg");
+	}
+	
+	.formbox{
+		
+		background-color: /*#4EB1BA*/ rgba(255,255,255,0.8);
+		width: 500px;
+		height: 330px;
+		padding: 15px;
+		display: block;
+		margin: 0 auto;
+		/*border-style: solid;
+		border-width: 15px;
+		border-color:black; */
+		border-radius: 8px;
+	}
+	a:link, a:visited{
+		text-decoration:none;
+		color: black;
+	}
+	.formbox2{
+		
+		background-color: /*#4EB1BA*/ rgba(255,255,255,0.8);
+		width: 500px;
+		height: 580px;
+		padding: 15px;
+		display: block;
+		margin: 0 auto;
+		/*border-style: solid;
+		border-width: 15px;
+		border-color:black; */
+		border-radius: 8px;
+		
+	}
+	.bathroombox{
+		background-color: /*#4EB1BA*/ rgba(255,255,255,0.8);
+		width: 500px;
+		height: 370px;
+		padding: 15px;
+		display: block;
+		margin: 0 auto;
+		border-radius: 8px;
+	}
+	.BusKioskbox{
+		background-color: /*#4EB1BA*/ rgba(255,255,255,0.8);
+		width: 500px;
+		height: 470px;
+		padding: 15px;
+			display: block;
+		margin:0 auto;
+		border-radius: 8px;
+	}
+	.ridebox{
+		background-color: /*#4EB1BA*/ rgba(255,255,255,0.8);
+		width: 500px;
+		height: 515px;
+		padding: 15px;
+		display: block;
+		margin: 0 auto;
+		border-radius: 8px;
+	}
+	.ticketbox{
+		background-color: /*#4EB1BA*/ rgba(255,255,255,0.8);
+		width: 500px;
+		height: 535px;
+		padding: 15px;
+		display: block;
+		margin: 0 auto;
+		border-radius: 8px;
+	}
+	#registering{
+		display: block;
+		text-align: center;
+		font-family: Verdana;
+	}
+	.title{
+		text-align: center;
+		font-family: Verdana;
+	}
+	#instructions{
+		text-align: center;
+		font-family: Verdana;
+	}
+	#fname2{
+		width: 30%;
+		padding: 6px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;	
+		border-radius: 4px;}
+	#lname2{
+		width: 30%;
+		padding: 6px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;	
+		border-radius: 4px;}
+	#email2{
+		width: 30%;
+		padding: 6px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;	
+		border-radius: 4px;
+	}
+	#select{
+		width: 30%;
+		padding: 6px 15px;
+		margin: 8px 0;
+		box-sizing: border-box;	
+		border-radius: 4px;
+	}	
+	#calendar{
+		width: 30%;
+		padding: 6px 10px;
+		margin: 8px 0;
+		box-sizing: border-box;	
+		border-radius: 4px;
+	}
+	#UN2{
+		width: 30%;
+		padding: 6px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+		border-radius: 4px;
+	}
+	#pwd2{
+		width: 30%;
+		padding: 6px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;	
+		border-radius: 4px;
+	}
+	#verifypwd{
+		width: 30%;
+		padding: 6px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;	
+		border-radius: 4px;
+	}
+	#fname2:hover, #lname2:hover, #email2:hover, #UN2:hover, #pwd2:hover, #verifypwd:hover,#UN:hover, #pwd:hover{
+		border-color: blue;
+	}
+	#AR{
+			background-color: #222930;
+			background-image:url("test.jpg");
+	}
+	#homepage{
+		background-color: rgb(135,200,200);
+	}
+	.fakebutton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: -100px 100px;
+    cursor: pointer;
+	border-radius: 10px;
+	font-family: Verdana;
+	
+}
+#su{
+	font-family: Verdana;
+	font-size: 1em;
+}
+#Image {
+	display: block;
+	align-items: center;
+	margin: 0 auto;
+	width: 100px;
+	height:100px;
+	margin-top: 50px;
+	margin-left:520px;
+}
