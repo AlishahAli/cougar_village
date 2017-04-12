@@ -1,6 +1,6 @@
 {
   "name": "Cougar Village",
   "description": "A barebones web database PHP app that makes use of the Silex web framework",
-  "repository": "https://github.com/heroku/php-getting-started",
+  "repository": "https://github.com/ababber/cougar_village",
   "addons": []
 }
