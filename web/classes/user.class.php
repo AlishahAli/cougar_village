@@ -17,7 +17,9 @@ class User
     //new user model, set the attributes
     $user = new static();
     $user->name = $data['name'];
+    $user->empid = $data['empid'];
     $user->email = $data['email'];
+    $user->uname = $data['uname'];
     $user->password = $data['password'];
 
     if($user->isValid())
@@ -26,11 +28,13 @@ class User
 
         $db = Database::getInstance();
 
-        //alter to fit db
-        $stmt = $db->prepare('INSERT INTO users (name, email, password) VALUES (:name, :email, :password)');
-        $stmt->bindParam(':name', $data['name']);
-        $stmt->bindParam(':email', $data['email']);
-        $stmt->bindParam(':password', Hash::make($data['password']));
+        //R!: VALUES are the names from html
+        $stmt = $db->prepare('INSERT INTO website_auth_admin.user_authentication (name, user_email, user_name, password) VALUES (:fname_name, :empid_name, :email_name, :uname_name, :pword_name)');
+        $stmt->bindParam(':fname_name', $data['name']);
+        $stmt->bindParam(':empid_name', $data['empid']);
+        $stmt->bindParam(':email_name', $data['email']);
+        $stmt->bindParam(':uname_name', $data['uname']);
+        $stmt->bindParam(':pword_name', Hash::make($data['password']));
         $stmt->execute();
 
       } catch(PDOException $exception) {
