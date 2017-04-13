@@ -55,11 +55,11 @@ include('includes/header.php');
   <h3 style="position:absolute; top: 98px; left:12px; width:100%; color: black; "> VILLAGE </h3>
   <!--<p>Username:</p>-->
   <input id= "UN" type="text" name="uname_name" placeholder="Username" >
-  <br>
+  <br><br>
 
   <!--<p>Password:&nbsp;</p> -->
   <input id = "pwd" type="password" name="pword_name" placeholder="Password">
-  <br><br>
+  <br>
   <input id = "sub" type="submit" value="Login">
   <br><br>
   <a id = "signbutton" href="register.php" class="fakebutton">Sign Up</a>
