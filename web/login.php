@@ -62,6 +62,7 @@ include('includes/header.php');
   <input id = "pwd" type="password" name="pword_name" placeholder="Password">
   <br><br>
   <input id = "sub" type="submit" value="Login">
+  <br><br>
   <a id = "signbutton" href="register.php" class="fakebutton">Sign Up</a>
 
 </form>
