@@ -58,7 +58,7 @@ include('includes/header.php');
 <input id = "sub" type="submit" name = "submitbutton" value = "Sign Up">
 
 <br>
-  <a id = "sub" href= "login.php" class="fakebutton">Home</a>
+  <a id = "sub" href= "index.php" class="fakebutton">Home</a>
 
 </form>
 <br>
