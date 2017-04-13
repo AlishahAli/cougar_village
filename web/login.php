@@ -56,7 +56,6 @@ include('includes/header.php');
   <!--<p>Username:</p>-->
   <input id= "UN" type="text" name="uname_name" placeholder="Username" >
   <br>
-  <br>
 
   <!--<p>Password:&nbsp;</p> -->
   <input id = "pwd" type="password" name="pword_name" placeholder="Password">
