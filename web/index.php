@@ -32,9 +32,9 @@ include('includes/header.php');
   <h3 style="position:absolute; top: 98px; left:12px; width:100%; color: black; "> VILLAGE </h3>
 
   <br><br>
-  <a id = "sub" href= "./web/login.php" class="fakebutton">Login </a>
+  <a id = "sub" href= "login.php" class="fakebutton">Login </a>
   <br><br>
-  <a id = "signbutton" href="./web/register.php" class="fakebutton">Sign Up</a>
+  <a id = "signbutton" href="register.php" class="fakebutton">Sign Up</a>
 
 </form>
 
