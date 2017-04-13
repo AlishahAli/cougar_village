@@ -49,7 +49,7 @@ include('includes/header.php');
 
 
 	Full Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input id = "fname2" type="text" name="fname_name"> <br><br>
-	Employee ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id = "lname2" type="text" name="lname_name"> <br><br>
+	Employee ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id = "lname2" type="text" name="empid_name"> <br><br>
 	Email Address:&nbsp;&nbsp;&nbsp; <input id = "email2" type="text" name="email_name"  > <br><br>
 	Username: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id = "UN2" type="text" name="uname_name"  > <br><br>
 	Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<input id = "pwd2" type="password" name="pword_name"  > <br><br>
