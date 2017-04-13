@@ -39,8 +39,6 @@ include('includes/header.php');
 
 ?>
 
-<h1>Login</h1>
-
 <?php if (isset($email)): ?>
   <p>Invalid login</p>
 <?php endif; ?>
