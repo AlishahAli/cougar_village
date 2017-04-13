@@ -12,7 +12,7 @@ include('includes/header.php');
 
 ?>
 
-<h1>Login</h1>
+<h1>Test</h1>
 
 <?php if (Auth::getInstance()->isLoggedIn()): ?>
 
