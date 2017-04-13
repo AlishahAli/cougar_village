@@ -19,8 +19,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   if (empty($user->errors)) {
 
-    //redirect to login.php
-    Util::redirect('/login.php');
+    //redirect to register_confirm.php
+    Util::redirect('/register_confirm.php');
   }
 }
 
