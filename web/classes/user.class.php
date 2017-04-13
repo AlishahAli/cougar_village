@@ -18,8 +18,8 @@ class User
     $user = new static();
     $user->name = $data['name'];
     $user->empid = $data['empid'];
-    $user->email = $data['email'];
     $user->uname = $data['uname'];
+    $user->email = $data['email'];
     $user->password = $data['password'];
 
     if($user->isValid())
@@ -29,11 +29,17 @@ class User
         $db = Database::getInstance();
 
         //R!: VALUES are the names from html
-        $stmt = $db->prepare('INSERT INTO website_auth_admin.user_authentication (name, user_email, user_name, password) VALUES (:fname_name, :empid_name, :email_name, :uname_name, :pword_name)');
+
+        $stmt = $db->prepare('INSERT INTO website_auth_admin.employee_log (employee_display_name, employee_id, employee_user_name) VALUES (:fname_name, :empid_name, :uname_name)');
         $stmt->bindParam(':fname_name', $data['name']);
         $stmt->bindParam(':empid_name', $data['empid']);
-        $stmt->bindParam(':email_name', $data['email']);
         $stmt->bindParam(':uname_name', $data['uname']);
+        $stmt->execute();
+
+
+        $stmt = $db->prepare('INSERT INTO website_auth_admin.user_authentication (user_name, user_email, user_password) VALUES (:uname_name, :email_name, :pword_name)');
+        $stmt->bindParam(':uname_name', $data['uname']);
+        $stmt->bindParam(':email_name', $data['email']);
         $stmt->bindParam(':pword_name', Hash::make($data['password']));
         $stmt->execute();
 
