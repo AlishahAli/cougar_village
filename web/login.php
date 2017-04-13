@@ -67,30 +67,5 @@ include('includes/header.php');
   <a id = "signbutton" href="register.php" class="fakebutton">Sign Up</a>
 
 </form>
-	
-	<script>
-
-	var Lusername = document.forms["login"]["uname_name"].value;
-	var Lpassword = document.forms["login"]["pword_name"].value;
-	
-	function validateForm() {
-	var username = document.forms["login"]["uname_name"].value;
-    if (username == "") {
-        alert("Username and password must be filled out");
-        return false;
-    }
-	var password = document.forms["login"]["pword_name"].value;
-    if (password == "") {
-	
-        alert("Username and Password must be filled out");
-        return false;
-    }
-	else{
-		return true;
-	}
-	
-}
-	
-</script>
 
 <?php include('includes/footer.php'); ?>
