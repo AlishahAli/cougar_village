@@ -12,7 +12,13 @@ include('includes/header.php');
 
 ?>
 
-<h1>Test</h1>
+<body id = "LF">
+<br>
+<br>
+<br>
+<div class = "formbox">
+<form id="login" action = "./web/index.php" name = "login" onsubmit ="return validateForm()" >
+	<br>
 
 <?php if (Auth::getInstance()->isLoggedIn()): ?>
 
@@ -21,7 +27,18 @@ include('includes/header.php');
 
 <?php else: ?>
 
-  <p><a href="register.php">Sign up</a> or <a href="login.php">Log in</a></p>
+  <img style="width: 300px; height: 90px; border-radius:8px, margin-left: 15px;opacity:.7;" src="https://img.clipartfest.com/d380d2184ed63d408f777340dd4f40da_roller-coaster-tracks-clip-art-cartoon-roller-coaster-clipart_3133-1495.jpeg"><br><br>
+  <h3 style="position:absolute; top: 83px; left:-10px; width:100%; color: red; "> COUG</h3>
+  <h3 style="position:absolute; top: 98px; left:12px; width:100%; color: black; "> VILLAGE </h3>
+
+  <br><br>
+  <a id = "sub" href= "./web/login.php" class="fakebutton">Login </a>
+  <br><br>
+  <a id = "signbutton" href="./web/register.php" class="fakebutton">Sign Up</a>
+
+</form>
+
+</div>
 
 <?php endif; ?>
 
