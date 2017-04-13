@@ -9,19 +9,12 @@ provides the db configuration
 
 class Config
 {
-  //R!: change DB_HOST depending on heroku settings
 
-  const DB_HOST = '127.0.0.1',
-        DB_NAME = 'nothing',
-        DB_USER = 'root',
-        DB_PASS = ' ';
-
-/*
 //required fields for heroku
-const DB_HOST = 'nothing',
-      DB_NAME = 'nothing',
-      DB_USER = 'root',
-      DB_PASS = ' ',
+const DB_HOST = 'ec2-184-73-236-170.compute-1.amazonaws.com',
+      DB_NAME = 'd6bj0c00g8128k',
+      DB_USER = 'wrqccthwdwoqwv',
+      DB_PASS = 'fc350d5213bb2b7c992b434e48bf6cffde0846281587bfd231a54f23f1e7428f',
       DB_SSL  = require,
       DB_PORT = 5432;
 */
