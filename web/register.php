@@ -53,7 +53,7 @@ include('includes/header.php');
 	Email Address:&nbsp;&nbsp;&nbsp; <input id = "email2" type="text" name="email_name"  > <br><br>
 	Username: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id = "UN2" type="text" name="uname_name"  > <br><br>
 	Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<input id = "pwd2" type="password" name="pword_name"  > <br><br>
-	Verify Password: <input id = "verifypwd" type="password" name="verifypwd_name"> <br>
+	Verify Password: <input id = "verifypwd" type="password" name="verifypwd_name"> <br><br>
 
 <input id = "sub" type="submit" name = "submitbutton" value = "Sign Up">
 
