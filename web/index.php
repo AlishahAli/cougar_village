@@ -12,7 +12,7 @@ include('includes/header.php');
 
 ?>
 
-<body id = "LF">
+<body id = "AR">
 <br>
 <br>
 <br>
