@@ -19,7 +19,7 @@ return void
 
 function newAutoLoad($className)
 {
-  require dirname(dirname(dirname(__FILE__))) . '/classes/' . $className . '.class.php';
+  require_once '/classes/' . $className . '.class.php';
 }
 
 
