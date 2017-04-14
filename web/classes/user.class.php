@@ -30,11 +30,10 @@ class User
 
         //R!: VALUES are the names from html
 
-
-        $stmt = $db->prepare('INSERT INTO website_auth_admin.employee_log (employee_display_name, employee_id, employee_user_name) VALUES (:fname_name, :empid_name, :uname_name)');
-        $stmt->bindParam(':fname_name', $data['fname_name']);
-        $stmt->bindParam(':empid_name', $data['empid_name']);
-        $stmt->bindParam(':uname_name', $data['uname_name']);
+        $stmt = $db->prepare('INSERT INTO website_auth_admin.employee_log (employee_display_name, employee_id, employee_user_name) VALUES (fname_name, empid_name, uname_name)');
+        $stmt->bindParam('fname_name', $data['fname_name']);
+        $stmt->bindParam('empid_name', $data['empid_name']);
+        $stmt->bindParam('uname_name', $data['uname_name']);
         $stmt->execute();
 
 
