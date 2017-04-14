@@ -24,9 +24,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $db = Database::getInstance();
 
-    $sql01 = 'INSERT INTO website_auth_admin.employee_log (employee_display_name, employee_id, employee_user_name)
-            VALUES ('fname_name', 'empid_name', 'uname_name');';
+    $sql01 = "INSERT INTO website_auth_admin.employee_log (employee_display_name, employee_id, employee_user_name)
+            VALUES ('test', 'test', 'test')";
 
+            //fname_name, empid_name, uname_name
     $db->execute($sql01);
   //}
 }
