@@ -34,10 +34,10 @@ class Database
 
       $dsn = 'pgsql:'
       . 'host=' . Config::DB_HOST
-      . ';dbname=' . Config::DB_NAME .
-      . ';user=' . Config::DB_USER .
-      . ';port=' . Config::DB_PORT .
-      . ';sslmode=' . Config::DB_SSL .
+      . ';dbname=' . Config::DB_NAME
+      . ';user=' . Config::DB_USER
+      . ';port=' . Config::DB_PORT
+      . ';sslmode=' . Config::DB_SSL 
       . ';password=' . Config::DB_PASS ;
 
       $_db = new PDO($dsn);
