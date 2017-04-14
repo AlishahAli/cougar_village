@@ -20,7 +20,8 @@ return void
 
 function newAutoLoad($className)
 {
-  require_once '/classes/' .:/app/.heroku/php/lib/php . $className . '.class.php';
+  require_once .:/app/.heroku/php/lib/php
+  require_once '/classes/' . $className . '.class.php';
 }
 
 
