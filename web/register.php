@@ -8,31 +8,42 @@ register form
 
 //initialization file included here everytime
 require_once('includes/initialize.php');
-require_once('Test.php');
+//require_once('Test.php');
 
 //require the user to NOT be logged in before they can see this page
 Auth::getInstance()->requireGuest();
 
-DB_Connect::connect;
+//DB_Connect::connect;
 
 //process the submitted form
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
+/*
   //$user = User::signup($_POST);
-
   //if (empty($user->errors)) {
-
     //redirect to register_confirm.php
-    Util::redirect('/register_confirm.php');
-
-    $db = Database::getInstance();
-
-    $sql01 = "INSERT INTO website_auth_admin.user_authentication (user_name, user_email, user_password)
-            VALUES ('test', 'test', 'test')";
-
+    //Util::redirect('/register_confirm.php');
+    //$db = Database::getInstance();
+    //$sql01 = "INSERT INTO website_auth_admin.user_authentication (user_name, user_email, user_password)
+            //VALUES ('test', 'test', 'test')";
             //fname_name, empid_name, uname_name
-    $db->execute($sql01);
+    //$db->execute($sql01);
   //}
+*/
+
+echo $_POST;
+
+$db = new Database();
+$conn = $db->getInstance();
+
+$query01 = "INSERT INTO website_auth_admin.user_authentication(user_name, user_email, user_password) VALUES ('TEST3','ali@yahoo.com','alishah')";
+    $result01 = pg_query($conn,$query01);
+    //echo $result;
+
+    $query02 = "INSERT INTO website_auth_admin.employee_log(employee_display_name, employee_id, employee_user_name) VALUES ('TEST2','ali@yahoo.com','TEST3')";
+    $result02 = pg_query($conn,$query02);
+
+
+
 }
 
 include('includes/header.php');
