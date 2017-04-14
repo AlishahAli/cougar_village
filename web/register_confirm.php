@@ -5,7 +5,7 @@
  */
 
 // Initialisation
-require_once('includes/init.php');
+require_once('includes/initialize.php');
 
 // Set the title, show the page header, then the rest of the HTML
 $page_title = 'Sign Up';
