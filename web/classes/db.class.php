@@ -37,10 +37,13 @@ class Database
       . ';dbname=' . Config::DB_NAME
       . ';user=' . Config::DB_USER
       . ';port=' . Config::DB_PORT
-      . ';sslmode=' . Config::DB_SSL 
+      . ';sslmode=' . Config::DB_SSL
       . ';password=' . Config::DB_PASS ;
 
       $_db = new PDO($dsn);
+
+      //set PDO error mode to exception
+      $_db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     }
     return static::$_db;
