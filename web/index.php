@@ -17,7 +17,7 @@ include('includes/header.php');
 <br>
 <br>
 <div class = "formbox">
-<form id="login" action = "./web/index.php" name = "login" onsubmit ="return validateForm()" >
+<form id="login" name = "login" onsubmit ="return validateForm()" >
 	<br>
 
 <?php if (Auth::getInstance()->isLoggedIn()): ?>
