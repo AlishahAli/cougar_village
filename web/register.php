@@ -75,16 +75,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 //echo $_POST['fname_name'];
 
+$uname = $_POST['uname_name'];
+$email = $_POST['email_name'];
+$pword = $_POST['pword_name'];
+$fname = $_POST['fname_name'];
+$empid = $_POST['empid_name'];
+$uname = $_POST['uname_name'];
+
 
 $db = new Database();
 $conn = $db->getInstance();
 
 //add prepare() f(n) if time permits
-$query01 = "INSERT INTO website_auth_admin.user_authentication(user_name, user_email, user_password) VALUES ("$_POST['uname_name']", "$_POST['email_name']", "$_POST['pword_name']")";
+$query01 = "INSERT INTO website_auth_admin.user_authentication(user_name, user_email, user_password) VALUES ("$uname", "$email", "$pword")";
     $result01 = pg_query($conn,$query01);
     //echo $result;
 
-    $query02 = "INSERT INTO website_auth_admin.employee_log(employee_display_name, employee_id, employee_user_name) VALUES ("$_POST['fname_name']", "$_POST['empid_name']", "$_POST['uname_name']")";
+    $query02 = "INSERT INTO website_auth_admin.employee_log(employee_display_name, employee_id, employee_user_name) VALUES ("$fname", "$empid", "$uname")";
     $result02 = pg_query($conn,$query02);
 
 
