@@ -43,9 +43,9 @@ class User
         $stmt->execute();
         */
 
-        
+
         $sql01 = 'INSERT INTO website_auth_admin.employee_log (employee_display_name, employee_id, employee_user_name)
-                VALUES ($user->fname_name, $user->empid_name, $user->uname_name)');
+                VALUES ($user->fname_name, $user->empid_name, $user->uname_name)';
 
         //$sql02 =
 
