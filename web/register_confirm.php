@@ -27,7 +27,7 @@ include('includes/header.php');
   <h3 style="color: red;"> You Have Successfully Registered </h3>
   <br><br>
 
-  <a id = "signbutton" href="./web/login.php" class="fakebutton">Login</a>
+  <a id = "signbutton" href="login.php" class="fakebutton">Login</a>
 
 </form>
 
