@@ -91,7 +91,7 @@ $query01 = "INSERT INTO website_auth_admin.user_authentication(user_name, user_e
     $result01 = pg_query($conn,$query01);
     //echo $result;
 
-    $query02 = "INSERT INTO website_auth_admin.employee_log(employee_display_name, employee_id, employee_user_name) VALUES ("$fname", "$empid", "$uname")";
+    $query02 = "INSERT INTO website_auth_admin.employee_log(employee_display_name, employee_id, employee_user_name) VALUES ("$fname", "$empid", 'test')";
     $result02 = pg_query($conn,$query02);
 
 
