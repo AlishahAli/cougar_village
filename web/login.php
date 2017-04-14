@@ -43,7 +43,7 @@ include('includes/header.php');
   <p>Invalid login</p>
 <?php endif; ?>
 
-<body id = "LF">
+<body id = "AR">
 <br>
 <br>
 <br>
