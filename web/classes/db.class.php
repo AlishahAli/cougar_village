@@ -40,7 +40,7 @@ class Database
       . ';sslmode=' . Config::DB_SSL .
       . ';password=' . Config::DB_PASS ;
 
-      $db = new PDO($dsn);
+      $_db = new PDO($dsn);
 
     }
     return static::$_db;
