@@ -27,13 +27,12 @@ class User
       try {
 
         $db = Database::getInstance();
-
+      /*
         //R!: VALUES are the names from html
-
-        $stmt = $db->prepare('INSERT INTO website_auth_admin.employee_log (employee_display_name, employee_id, employee_user_name) VALUES (fname_name, empid_name, uname_name)');
-        $stmt->bindParam('fname_name', $data['fname_name']);
-        $stmt->bindParam('empid_name', $data['empid_name']);
-        $stmt->bindParam('uname_name', $data['uname_name']);
+        $stmt = $db->prepare('INSERT INTO website_auth_admin.employee_log (employee_display_name, employee_id, employee_user_name) VALUES (:fname_name, :empid_name, :uname_name)');
+        $stmt->bindParam(':fname_name', $data['fname_name']);
+        $stmt->bindParam(':empid_name', $data['empid_name']);
+        $stmt->bindParam(':uname_name', $data['uname_name']);
         $stmt->execute();
 
 
@@ -42,14 +41,16 @@ class User
         $stmt->bindParam(':email_name', $data['email_name']);
         $stmt->bindParam(':pword_name', Hash::make($data['pword_name']));
         $stmt->execute();
-
-
-        /*
-        $sql = 'INSERT INTO website_auth_admin.employee_log (employee_display_name, employee_id, employee_user_name)
-                VALUES (:fname_name, :empid_name, :uname_name)');
-
-        $db->exec($sql)
         */
+
+        /
+        $sql01 = 'INSERT INTO website_auth_admin.employee_log (employee_display_name, employee_id, employee_user_name)
+                VALUES ($user->fname_name, $user->empid_name, $user->uname_name)');
+
+        //$sql02 =
+
+        $db->exec($sql01);
+
 
       } catch(PDOException $exception) {
 
