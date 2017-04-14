@@ -27,9 +27,11 @@ class DB_Connect
     $db1 = new DB_Connect();
     $conn = $db1->connect();
 
-    $query = "INSERT INTO website_auth_admin.user_authentication(user_name,user_email,user_password) VALUES ('TEST1','ali@yahoo.com','alishah')";
+    $query = "INSERT INTO website_auth_admin.user_authentication(user_name, user_email, user_password) VALUES ('TEST2','ali@yahoo.com','alishah')";
     $result = pg_query($conn,$query);
-    echo $result;
+    //echo $result;
 
+    $query = "INSERT INTO website_auth_admin.employee_log(employee_display_name, employee_id, employee_user_name) VALUES ('TEST2','ali@yahoo.com','TEST2')";
+    $result = pg_query($conn,$query);
 
 ?>
