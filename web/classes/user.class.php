@@ -22,8 +22,8 @@ class User
     $user->email = $data['email'];
     $user->password = $data['password'];
 
-    if($user->isValid())
-    {
+    //if($user->isValid())
+    //{
       try {
 
         $db = Database::getInstance();
@@ -48,7 +48,7 @@ class User
         // Log the exception message
         error_log($exception->getMessage());
       }
-    }
+    //}
     return $user;
   }
 
@@ -58,7 +58,7 @@ class User
    * @param string $email  email address
    * @return boolean
    */
-
+/*
   public function emailExists($email) {
     try {
 
@@ -76,7 +76,7 @@ class User
       return false;
     }
   }
-  
+  */
 
 
   /*use same model for validating form data during registration
@@ -84,7 +84,8 @@ class User
    *
    * @return boolean  true if valid, false otherwise
    */
-
+/*
+  //deploy after confirmation of writting to db
   public function isValid()
   {
     $this->errors = [];
@@ -103,9 +104,11 @@ class User
       $this->errors['email'] = 'Please enter a valid email address';
     }
 
+
     if ($this->emailExists($this->email)) {
       $this->errors['email'] = 'That email address is already taken';
     }
+
 
     //
     // password
@@ -116,6 +119,8 @@ class User
 
     return empty($this->errors);
   }
+
+  */
 
 
 
