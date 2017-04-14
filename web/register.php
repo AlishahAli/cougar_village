@@ -17,11 +17,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   $user = User::signup($_POST);
 
-  if (empty($user->errors)) {
+  //if (empty($user->errors)) {
 
     //redirect to register_confirm.php
     Util::redirect('/register_confirm.php');
-  }
+  //}
 }
 
 include('includes/header.php');
