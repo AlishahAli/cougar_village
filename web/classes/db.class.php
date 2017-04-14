@@ -27,11 +27,21 @@ class Database
     //and review if PDO instance is correctly made for heroku
     if (static::$_db === NULL)
     {
-      $dsn = 'mysql:host=' . Config::DB_HOST . ';dbname=' . Config::DB_NAME . ';charset=utf8';
-      static::$_db = new PDO($dsn, Config::DB_USER, Config::DB_PASS);
-
+      //$dsn = 'pgsql:host=' . Config::DB_HOST . ';dbname=' . Config::DB_NAME . ';charset=utf8';
+      //static::$_db = new PDO($dsn, Config::DB_USER, Config::DB_PASS);
       //raise exceptions when a database exception occurs
-      static::$_db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+      //static::$_db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+      $dsn = 'pgsql:'
+      . 'host=' . Config::DB_HOST
+      . ';dbname=' . Config::DB_NAME .
+      . ';user=' . Config::DB_USER .
+      . ';port=' . Config::DB_PORT .
+      . ';sslmode=' . Config::DB_SSL .
+      . ';password=' . Config::DB_PASS ;
+
+      $db = new PDO($dsn);
+
     }
     return static::$_db;
   }
