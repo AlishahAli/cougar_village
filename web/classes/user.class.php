@@ -43,13 +43,14 @@ class User
         $stmt->execute();
         */
 
-
+        /*
         $sql01 = 'INSERT INTO website_auth_admin.employee_log (employee_display_name, employee_id, employee_user_name)
                 VALUES (fname_name, empid_name, uname_name)';
-
+        */
+        
         //$sql02 =
 
-        $db->execute($sql01);
+        //$db->execute($sql01);
 
 
       } catch(PDOException $exception) {

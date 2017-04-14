@@ -15,12 +15,17 @@ Auth::getInstance()->requireGuest();
 //process the submitted form
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-  $user = User::signup($_POST);
+  //$user = User::signup($_POST);
 
   //if (empty($user->errors)) {
 
     //redirect to register_confirm.php
     Util::redirect('/register_confirm.php');
+
+    $db = Database::getInstance();
+
+    $sql01 = 'INSERT INTO website_auth_admin.employee_log (employee_display_name, employee_id, employee_user_name)
+            VALUES (fname_name, empid_name, uname_name)';
   //}
 }
 
