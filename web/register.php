@@ -8,7 +8,7 @@ register form
 
 //initialization file included here everytime
 require_once('includes/initialize.php');
-require_once('web/Test.php');
+require_once('Test.php');
 
 //require the user to NOT be logged in before they can see this page
 Auth::getInstance()->requireGuest();
