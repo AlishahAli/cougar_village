@@ -16,11 +16,11 @@ class User
   {
     //new user model, set the attributes
     $user = new static();
-    $user->name = $data['fname_name'];
-    $user->empid = $data['empid_name'];
-    $user->uname = $data['uname_name'];
-    $user->email = $data['email_name'];
-    $user->password = $data['pword_name'];
+    $user->fname_name = $data['fname_name'];
+    $user->empid_name = $data['empid_name'];
+    $user->uname_name = $data['uname_name'];
+    $user->email_name = $data['email_name'];
+    $user->pword_name = $data['pword_name'];
 
     //if($user->isValid())
     //{
