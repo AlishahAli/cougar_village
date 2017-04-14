@@ -11,10 +11,10 @@ class Config
 {
 
 //required fields for heroku
-    const DB_HOST = 'ec2-184-73-236-170.compute-1.amazonaws.com';
-    const DB_NAME = 'd6bj0c00g8128k';
-    const DB_USER = 'wrqccthwdwoqwv';
-    const DB_PASS = 'fc350d5213bb2b7c992b434e48bf6cffde0846281587bfd231a54f23f1e7428f';
+    const DB_HOST = 'ec2-50-19-95-47.compute-1.amazonaws.com';
+    const DB_NAME = 'd4j6prebdlmau9';
+    const DB_USER = 'qniibjvdqrucoa ';
+    const DB_PASS = '5bd87c534f8455a3712867981a1a14bea89c2dd1e6b93f85ccfb8a4e41477bfa';
     const DB_SSL  = 'require';
     const DB_PORT = 5432;
 
