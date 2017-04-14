@@ -34,7 +34,7 @@ include('includes/header.php');
   <br><br>
   <a id = "sub" href= "login.php" class="fakebutton">Login </a>
   <br><br>
-  <a id = "signbutton" href="register.php" class="fakebutton">Sign Up</a>
+  <a id = "signbutton" href="Bathrooms.php" class="fakebutton">Sign Up</a>
 
 </form>
 
