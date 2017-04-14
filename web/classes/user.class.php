@@ -58,7 +58,7 @@ class User
    * @param string $email  email address
    * @return boolean
    */
-  /*
+
   public function emailExists($email) {
     try {
 
@@ -76,7 +76,7 @@ class User
       return false;
     }
   }
-  */
+  
 
 
   /*use same model for validating form data during registration
@@ -84,7 +84,7 @@ class User
    *
    * @return boolean  true if valid, false otherwise
    */
-  /*
+
   public function isValid()
   {
     $this->errors = [];
@@ -116,7 +116,7 @@ class User
 
     return empty($this->errors);
   }
-  */
+
 
 
 }
