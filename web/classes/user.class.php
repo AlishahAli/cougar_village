@@ -49,7 +49,7 @@ class User
 
         //$sql02 =
 
-        $db->exec($sql01);
+        $db->execute($sql01);
 
 
       } catch(PDOException $exception) {
