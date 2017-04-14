@@ -45,7 +45,7 @@ include('includes/header.php');
 
 
 
-<form id = "registering" action = "register.php" method = "post" name= "register" >
+<form id = "registering" method = "post" name= "register" >
 
 
 	Full Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input id = "fname2" type="text" name="fname_name"> <br><br>
