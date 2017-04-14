@@ -96,6 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     */
 
     //pass $_POST array to user class
+    $user = User::signup($_POST);
     //redirect to register_confirm.php
     Util::redirect('/register_confirm.php');
 
