@@ -5,12 +5,16 @@ class DB_Connect
         private $db;
         public function connect()
         {
+          /*
           $host        = "ec2-50-19-95-47.compute-1.amazonaws.com";
           $port        = "port=5432";
           $dbname      = "d4j6prebdlmau9";
           $credentials = "user=qniibjvdqrucoa password=5bd87c534f8455a3712867981a1a14bea89c2dd1e6b93f85ccfb8a4e41477bfa";
+          */
 
-          $db = pg_connect( " $url $host $port $dbname $credentials"  );
+          $connect_string = "host=ec2-50-19-95-47.compute-1.amazonaws.com dbname=d4j6prebdlmau9 user=qniibjvdqrucoa port=5432 sslmode=require password=5bd87c534f8455a3712867981a1a14bea89c2dd1e6b93f85ccfb8a4e41477bfa"
+
+          $db = pg_connect($connect_string);
           if(!$db){
              echo "Error : Unable to open database\n";
           } else {
