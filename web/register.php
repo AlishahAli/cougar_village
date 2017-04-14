@@ -71,8 +71,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   //}
 */
 
-//echo $_POST['fname_name'];
-
+    //echo $_POST['fname_name'];
+    /*
+    //able to write to db with this code
     $uname = $_POST['uname_name'];
     $email = $_POST['email_name'];
     $pword = $_POST['pword_name'];
@@ -92,6 +93,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $query02 = "INSERT INTO website_auth_admin.employee_log(employee_display_name, employee_id, employee_user_name) VALUES ('" . $fname . "', '" . $empid . "', '" . $uname . "')";
     $result02 = pg_query($conn,$query02);
 
+    */
+
+    //pass $_POST array to user class
     //redirect to register_confirm.php
     Util::redirect('/register_confirm.php');
 

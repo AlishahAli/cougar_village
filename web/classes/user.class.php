@@ -15,18 +15,21 @@ class User
   public static function signup($data)
   {
     //new user model, set the attributes
-    $user = new static();
-    $user->fname_name = $data['fname_name'];
-    $user->empid_name = $data['empid_name'];
-    $user->uname_name = $data['uname_name'];
-    $user->email_name = $data['email_name'];
-    $user->pword_name = $data['pword_name'];
+    //$user = new static();
+    //previously $_POST data was assigned to $user->$fname_name
+    $fname = $data['fname_name'];
+    $empid = $data['empid_name'];
+    $uname = $data['uname_name'];
+    $email = $data['email_name'];
+    $pword = $data['pword_name'];
 
     //if($user->isValid())
     //{
       try {
 
-        $db = Database::getInstance();
+
+        $db = new Database();
+        $conn = $db->getInstance();
       /*
         //R!: VALUES are the names from html
         $stmt = $db->prepare('INSERT INTO website_auth_admin.employee_log (employee_display_name, employee_id, employee_user_name) VALUES (:fname_name, :empid_name, :uname_name)');
@@ -47,10 +50,16 @@ class User
         $sql01 = 'INSERT INTO website_auth_admin.employee_log (employee_display_name, employee_id, employee_user_name)
                 VALUES (fname_name, empid_name, uname_name)';
         */
-        
+
         //$sql02 =
 
         //$db->execute($sql01);
+
+        $query01 = "INSERT INTO website_auth_admin.user_authentication(user_name, user_email, user_password) VALUES ('" . $uname . "', '" . $email . "', '" . $pword . "')";
+        $result01 = pg_query($conn,$query01);
+
+        $query02 = "INSERT INTO website_auth_admin.employee_log(employee_display_name, employee_id, employee_user_name) VALUES ('" . $fname . "', '" . $empid . "', '" . $uname . "')";
+        $result02 = pg_query($conn,$query02);
 
 
       } catch(PDOException $exception) {
