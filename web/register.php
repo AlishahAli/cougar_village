@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   //}
 */
 
-echo $_POST;
+echo $_POST['fname_name'];
 
 /*
 $db = new Database();
